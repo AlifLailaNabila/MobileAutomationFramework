@@ -6,11 +6,18 @@ import org.openqa.selenium.support.FindBy;
 
 public class Buttons extends Base {
  @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Right pointing arrow\"]") public static WebElement imageButton;
- @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Gray\"]") public static WebElement Button;
+ @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Gray\"]") public static WebElement button;
+ @FindBy(xpath = "//XCUIElementTypeNavigationBar[@name=\"Buttons\"]") public static WebElement back;
+
     public void clickbuttons(){
-        Button.click();
+        button.click();
     }
     public void setImageButton(){
         imageButton.click();
     }
+    public void checkBackButton(){
+        button.click();
+        back.click();
+    }
+
 }

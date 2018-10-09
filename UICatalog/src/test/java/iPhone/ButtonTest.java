@@ -27,4 +27,8 @@ Buttons buttons;
         public void imageButtonTest(){
         buttons.setImageButton();
         }
+    @Test
+    public void backTest(){
+        buttons.checkBackButton();
+    }
 }
